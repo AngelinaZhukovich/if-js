@@ -4,7 +4,7 @@ let user = {
 
 console.log(user);
 
-let student = {
+const student = {
   name: 'Angelina',
 };
 
@@ -44,7 +44,7 @@ for (let i = 0; i < a.length; i++) {
 
 const b = [2, 5, 8, 15, 0, 6, 20, 3];
 for (let i = 0; i < b.length; i++) {
-  if (b[i] %2 === 0 && b[i]!=0) {
+  if (b[i] % 2 === 0 && b[i] != 0) {
     console.log(b[i]);
   }
 }
