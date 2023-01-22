@@ -1,19 +1,65 @@
-const word = `шалаш`;
+const num1 = 7;
+const num2 = 5;
+
+function min(a, b) {
+    if (a > b) {
+        return b;
+    } else {
+        return a;
+    }
+}
+min(num1, num2);
+console.log(min(num1, num2));
+
+const num3 = 8;
+const num4 = 8;
+function max(a, y) {
+    if (a > y && a != y) {
+        return a;
+    } else {
+        if (a == y) {
+            return 'числа равны';
+        } else {
+            return y;
+        }
+    }
+}
+
+console.log(max(num3, num4));
+
+const word = 'шалаш';
+const word1 = 'малыш';
+// console.log(word);
 // console.log(word[0])
 // console.log(word[word.length - 1])
 // console.log(word[word.length - 2])
 
 function palindrome(str) {
+    let result = '';
     for (let i = 0; i < str.length; i++) {
-        if ((str[0] === str[str.length - 1]) & (str[1] === [str.length - 2])) {
-            console.log(true);
+        if (str[0] === str[str.length - 1] && str[1] === str[str.length - 2]) {
+            result = 'true';
         } else {
-            console.log(false);
+            result = 'false';
         }
+        return result;
     }
 }
-palindrome(word);
 
+palindrome(word);
+console.log(palindrome(word1));
+
+const massiv =[0,12,20,25,34,40,50,67,79,80];
+function masiv(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[0] == 0 && arr[3] == 0){
+            return 'zero'
+        }
+    }
+
+}
+
+console.log(masiv(massiv))
 // ((pageName) => {
 //     console.log(pageName);
 //     const calc = (p1, p2, ...args) => {
@@ -37,16 +83,16 @@ palindrome(word);
 //     const sum = calc(num1, num2, num3, num4);
 //     console.log(sum);
 // })();
-
-//work online
-// function summ(number) {
+//
+//
+// function summ (number) {
 //     if (number > 10) {
 //         return number;
 //     }
 // }
-//
-// console.log(summ(16));
 
+// console.log(summ(16));
+//
 // function calc(...args) {
 //     let acc = 1;
 //
