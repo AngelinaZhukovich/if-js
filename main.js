@@ -1,3 +1,7 @@
-const text = 'hello world';
+function sum (n) {
+    return function (x) {
+        return n + x;
+    };
+}
 
-console.log(text);
+console.log(sum(5)(2)); // 7
