@@ -1,6 +1,5 @@
 const num1 = 7;
 const num2 = 5;
-
 function min(a, b) {
     if (a > b) {
         return b;
@@ -24,7 +23,6 @@ function max(a, y) {
         }
     }
 }
-
 console.log(max(num3, num4));
 
 const word = 'шалаш';
@@ -33,7 +31,6 @@ const word1 = 'малыш';
 // console.log(word[0])
 // console.log(word[word.length - 1])
 // console.log(word[word.length - 2])
-
 function palindrome(str) {
     let result = '';
     for (let i = 0; i < str.length; i++) {
@@ -45,21 +42,25 @@ function palindrome(str) {
         return result;
     }
 }
-
 palindrome(word);
 console.log(palindrome(word1));
 
-const massiv =[0,12,20,25,34,40,50,67,79,80];
+//не знаю как вытянуть в двухзначных числах 0 - чтоб цикл был
+const massiv = [0, 12, 20, 25, 34, 43, 51, 67, 79, 80];
 function masiv(arr) {
     for (let i = 0; i < arr.length; i++) {
-        if (arr[0] == 0 && arr[3] == 0){
-            return 'zero'
+        if (arr[i] == 0) {
+            arr[i] = 'zero';
+        } if (arr[i] == 20) {
+            arr[i] = 2 +'zero'
+        } if (arr[i] == 80) {
+            arr[i] = 8 +'zero'
         }
     }
-
+    return arr;
 }
+console.log(masiv(massiv));
 
-console.log(masiv(massiv))
 // ((pageName) => {
 //     console.log(pageName);
 //     const calc = (p1, p2, ...args) => {
