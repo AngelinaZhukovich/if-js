@@ -1,19 +1,27 @@
-const text = 'hello world';
+const re= /ab+c/;
+const ra = new RegExp('ab+c')
 
-console.log(text);
+// const String = '  Вiedie   jdeijdiejdei  '
+// // const String1 = new String(name);
+// // console.log(String1)
+// // console.log(name.indexOf('j', 5))
+// // console.log(name.lastIndexOf('j'))
+// console.log(String.length)
+// console.log(String)
+// // console.log(String.padEnd(25, '?'))
+// console.log(String.padStart(25, '?'))
+// console.log(String.repeat(5))
+// console.log(String.split('  ')) // разбивает на слова
+// console.log(String.split('')) /// на буквы
+// console.log(String.split()) // просто массив
+// console.log(String.split('  ').join(',')) // разбивает на слова, ставит "," и соединяет в предложение
+// console.log(String.substring(1, 6))// выводит с 1 по 6 символ
+// console.log(String.toUpperCase())
+// console.log(String.toLowerCase())
+//
+// console.log(String.trim()) //удаляет в начале и вконче предложения пустые символы
 
-const String = 'diedie   jdeijdiejdei'
-// const String1 = new String(name);
-// console.log(String1)
-// console.log(name.indexOf('j', 5))
-// console.log(name.lastIndexOf('j'))
-console.log(String.length)
-console.log(String.padEnd(25, '?'))
-console.log(String.padStart(25, '?'))
-console.log(String.repeat(5))
-console.log(String.split('  ')) // разбивает на слова
-console.log(String.split('')) /// на буквы
-console.log(String.split()) // просто массив
+
 // console.log(String.fromCharCode(189,43,190,61));
 // console.log(String.fromCodePoint())
 
