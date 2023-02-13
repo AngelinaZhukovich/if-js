@@ -20,7 +20,12 @@ const usersMap = users1.reduce((acc, user) => {
     return acc;
 }, new Map());
 console.log(usersMap);
-console.log(usersMap.get(1));
+console.log(usersMap.get(1)); //
+console.log(usersMap.has(5)); // has-есть ли пользователь с id (true or false)
+console.log(usersMap.delete(1))
+console.log(usersMap.size)
+usersMap.clear()
+console.log(usersMap)
 
 //4
 // const users = new Map([[1, {
