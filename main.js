@@ -1,15 +1,10 @@
-let user = {
-  name: 'John Doe',
-};
-
+let user = 'John Doe';
 console.log(user);
 
-const student = {
-  name: 'Angelina',
-};
+const student = 'Angelina';
 
-(user = student), // Angelina
-  console.log(user);
+user = student; // Angelina
+console.log(user);
 
 let test = 1;
 test = ++test; //2
@@ -29,23 +24,21 @@ console.log(x);
 let result = 1;
 
 for (let i = 0; i < x.length; i++) {
-  result = result * x[i];
+  result *= x[i];
 }
-
 console.log(result);
 
-const a = [2, 5, 8, 15, 0, 6, 20, 3];
+const arr1 = [2, 5, 8, 15, 0, 6, 20, 3];
 
-for (let i = 0; i < a.length; i++) {
-  if (a[i] > 5 && a[i] < 10) {
-    console.log(a[i]);
+for (let i = 0; i < arr1.length; i++) {
+  if (arr1[i] > 5 && arr1[i] < 10) {
+    console.log(arr1[i]);
   }
 }
 
-const b = [2, 5, 8, 15, 0, 6, 20, 3];
-for (let i = 0; i < b.length; i++) {
-  if (b[i] % 2 === 0 && b[i] != 0) {
-    console.log(b[i]);
+for (let i = 0; i < arr1.length; i++) {
+  if (arr1[i] % 2 === 0 && arr1[i] !== 0) {
+    console.log(arr1[i]);
   }
 }
 
