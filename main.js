@@ -1,28 +1,27 @@
 const num1 = 7;
 const num2 = 5;
+
 function min(a, b) {
     if (a > b) {
         return b;
-    } else {
-        return a;
     }
+    return a;
 }
+
 min(num1, num2);
+
 console.log(min(num1, num2));
 
 const num3 = 8;
-const num4 = 8;
+const num4 = 18;
+
 function max(a, y) {
-    if (a > y && a != y) {
+    if (a > y) {
         return a;
-    } else {
-        if (a == y) {
-            return 'числа равны';
-        } else {
-            return y;
-        }
     }
+    return y;
 }
+
 console.log(max(num3, num4));
 
 const word = 'шалаш';
@@ -32,17 +31,17 @@ const word1 = 'малыш';
 // console.log(word[word.length - 1])
 // console.log(word[word.length - 2])
 function palindrome(str) {
-    let result = '';
-    for (let i = 0; i < str.length; i++) {
-        if (str[0] === str[str.length - 1] && str[1] === str[str.length - 2]) {
-            result = 'true';
-        } else {
-            result = 'false';
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str[i] !== str[str.length - 1 - i]) {
+            return false;
         }
-        return result;
     }
+    return true;
 }
-palindrome(word);
+
+// console.log(word.length)
+
+console.log(palindrome(word));
 console.log(palindrome(word1));
 
 //не знаю как вытянуть в двухзначных числах 0 - чтоб цикл был
@@ -51,10 +50,12 @@ function masiv(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] == 0) {
             arr[i] = 'zero';
-        } if (arr[i] == 20) {
-            arr[i] = 2 +'zero'
-        } if (arr[i] == 80) {
-            arr[i] = 8 +'zero'
+        }
+        if (arr[i] == 20) {
+            arr[i] = 2 + 'zero';
+        }
+        if (arr[i] == 80) {
+            arr[i] = 8 + 'zero';
         }
     }
     return arr;
